@@ -1,0 +1,74 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+body {
+      background:linear-gradient(135deg, #8b5e3c,#2e2e2e);
+}
+.container {
+      padding: 30px;
+}
+.container .header h1{
+      font-size: 100px;
+      color: white;
+}
+.container .cards {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 100px;
+      margin-bottom: 100px;
+      gap: 15px;
+      text-align: center;
+      
+}
+.container .card{
+      background-color: white;
+      padding: 20px;
+      width: 150px;
+      height: 200px;
+      border-radius: 10px;
+      transition: border ease 0.3s,
+      box-shadow ease 0.3s;
+}
+.container .card p {
+      font-size: 40px;
+      margin: 50px 10px;
+      font-weight: bold;
+      text-align: center;
+}
+.container .card:hover {
+      border: 5px solid #bdc3c7;
+      box-shadow: 0 6px 12px rgb(0, 0, 0,0.2);
+}
+.container .footer {
+      text-align: center;
+}
+.container .footer select {
+      padding: 20px 30px;
+      font-size: 18px;
+      border: none;
+      transition: border ease 0.3s,
+      box-shadow ease 0.3s;
+      border-radius: 15px;
+      text-align: center;
+}
+.container .footer select {
+      background: linear-gradient(to right , #ffaaf8 ,#feca7bba);
+}
+.container .footer select:hover {
+      border: 5px solid #bdc3c7;
+      box-shadow: 0 6px 12px rgb(0, 0, 0,0.2);
+}
+.date {
+      color: white;
+      font-size: 20px;
+      padding: 30px;
+      margin-bottom: 30px;
+      font-weight: bold;
+      background: linear-gradient(to right , #ffaaf8 ,#feca7bba);
+      -webkit-background-clip: text;
+      color: transparent;
+}
