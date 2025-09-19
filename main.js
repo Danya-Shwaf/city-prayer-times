@@ -10,7 +10,7 @@ document.querySelector(".date").innerHTML =arabicDate;
 
 let citySelected = document.getElementById("city-select");
 function getTimings(city,country) {
-      const url =`http://api.aladhan.com/v1/timingsByCity/{date}?city=${city} &country=${country}`;
+      const url =`https://api.aladhan.com/v1/timingsByCity/{date}?city=${city} &country=${country}`;
       fetch(url)
       .then((response) => response.json())
       .then((myData) => {
@@ -31,9 +31,6 @@ getTimings("Saudi Arabia", "SA");
 citySelected.onchange = function (ele) {
       let city = document.getElementById("city-select").value.split("-")[0];
       let country = document.getElementById("city-select").value.split("-")[1];
+      console.log(city,country);
       getTimings(city,country);
 }
-
-
-
-
