@@ -3,11 +3,12 @@
       padding: 0;
       box-sizing: border-box;
 }
-body {
-      background:linear-gradient(135deg, #8b5e3c,#2e2e2e);
-}
+
+
 .container {
       padding: 30px;
+      height: 100vh;
+      background:linear-gradient(135deg, #8b5e3c,#2e2e2e);
 }
 .container .header h1{
       font-size: 100px;
